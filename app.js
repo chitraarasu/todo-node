@@ -21,7 +21,7 @@ app.use(favicon(__dirname + '/public/logo/favicon.ico'));
 //     useUnifiedTopology: true
 // });
 
-mongoose.connect("", {
+mongoose.connect(process.env.mongodb, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
